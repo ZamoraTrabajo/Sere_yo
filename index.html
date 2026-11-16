@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>El Impostor</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1d1233">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+</head>
+<body><main>
+<h1>EL IMPOSTOR</h1>
+<section id="s-cfg">
+  <h2>Jugadores</h2><ul class="pl" id="pl"></ul><button class="sec" id="add">+ Añadir jugador</button>
+  <h2>Categorías</h2><div class="chips" id="cats"></div>
+  <h2>Partida</h2>
+  <div class="card">
+    <label>Modo<select id="modo"><option value="clasico">Clásico</option><option value="pista">Con pista</option><option value="caos">Caos (impostores al azar)</option></select></label>
+    <div class="row" style="margin-top:10px"><span style="flex:1">Impostores</span><button class="x" id="imm">−</button><b id="im">1</b><button class="x" id="imp">+</button></div>
+    <div class="row" style="margin-top:10px"><label style="flex:1"><input type="checkbox" id="tm" style="width:auto"> Temporizador</label><input id="min" type="number" min="1" max="60" value="5" style="width:80px"> min</div>
+  </div>
+  <button id="go">Empezar</button>
+  <a href="admin.html" style="display:block;text-align:center;color:#8b7fb0;margin:14px">Admin</a>
+</section>
+<section id="s-play" class="hide"></section>
+</main>
+<script src="data/words-default.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/game.js"></script>
+<script src="js/pwa.js"></script>
+</body></html>
